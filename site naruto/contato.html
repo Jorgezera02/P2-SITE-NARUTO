@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Ninja Naruto', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .site-header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px; 
+            height: auto;
+        }
+
+        .main-menu {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .main-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .main-menu ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .main-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-menu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        
+        input:focus, textarea:focus {
+            border-color: #FF8C00;
+            box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+            outline: none;
+        }
+
+        
+        button {
+            background-color: #FF8C00;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        
+        button:hover {
+            background-color: #e67e00;
+        }
+
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        
+        .site-footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; 
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="imagens/logo_naruto_transparente.png" alt="Logo Naruto Shippuden" class="logo">
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="galeria.html">Personagens</a></li>
+                <li><a href="episodios.html">Episódios</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Tem alguma dúvida ou mensagem? Envie-nos uma mensagem abaixo e responderemos o mais rápido possível!</p>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© 2024 -  Naruto Shippuden | Desenvolvido por Jorge Adriano</p>
+    </footer>
+</body>
+</html>
